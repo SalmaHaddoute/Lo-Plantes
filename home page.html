@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            font-style: oblique;
+        }
+        header{
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+        .logo{ font-size: 2em;
+            color: rgb(0, 0, 0);
+            user-select: none;
+        }
+        .navigation a{position: relative;
+            font-size: 1.1em;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            margin-left:5px;
+            text-decoration: none;
+        }
+        .navigation .btnLogin-popup{
+            width: 130px;
+            height: 50px;
+            background: transparent;
+            border: 1px solid rgb(0, 0, 0);
+            outline: none;
+            border-radius: 30px;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            background: transparent;
+            font-weight: 500;
+            margin-left: 40px;
+        }
+        .navigation a:hover::after{
+        transform: scaleX(1);}
+        .navigation a::after{content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 3px;
+            background: rgb(113, 201, 142);
+            border-radius:5px;
+            transform: scaleX(0);
+            transition: transform.5s;}
+
+
+        h1{
+            color: rgb(0, 0, 0) !important;
+            font-family:'poppins',sans-serif ;
+            font-size: 60px;
+        }
+        .image{
+            position: relative;
+            top: -260px;
+        }
+        #home{
+            margin-top:2%;
+            margin-left: 2%;
+            background-color:#d0e0c3 ;/** background-image:url(WhatsApp_Image_2024-01-06_at_10.00.31_PM-removebg-preview-removebg-preview-removebg-preview.png) ;**/
+            background-repeat: no-repeat;
+            background-position:center;
+            object-fit: cover;
+            width: 1450px;
+            height: 675px;
+        }
+        #picter{
+            margin-top:0%;
+            margin-right: 30%;
+            width:900px ;
+        }
+        #p{
+            font-size: 20px;
+            font-weight: 800;
+            
+        }
+        .j{
+            display:flex;
+            flex-direction: row;
+            margin-left: 3%;
+        }               
+        #h{
+            font-size:xx-large 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 15%;
+            color: rgb(15, 54, 15);
+        }
+        h2{
+            margin-top: 0;
+            color:rgb(15, 54, 15) ;
+        }
+        #bac{
+            background-color: #bcd1aa;
+            height:300px ;
+            width: 1390px;
+            margin-top: auto;
+            
+        }
+        #subb{
+            color: rgb(15, 54, 15);
+            font-family: 'Times New Roman', Times, serif;
+            font-style: oblique;
+        }
+        input{
+            border: white;
+            margin-top: 5%;
+            width: 350px;
+            height: 50px;
+            color: black;
+            background-color: #d2ebbf;
+        }
+        input:active{
+            border: rgb(117, 212, 117);
+        }
+        .HHH{
+            display: flex;
+            flex-direction: row;
+            gap: 3%;
+        }
+        #pi{
+            height: 600px; 
+            width: 550px;
+        }
+        i{
+            color: antiquewhite;
+            justify-content: center;
+            justify-items: center;
+            margin-left: 2%;
+        }
+        .cercle{
+            border: transparent;
+            border-radius:  64px;
+            background-color: black;
+            width: 20px;
+        }
+        #loooo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .icon{
+            display: none;
+        }
+        #PARA{
+            margin-left: 8%;
+            font-family:'Times New Roman', Times, serif;
+            font-style: oblique;
+        }
+        @media screen and ( max-width:600px) {
+            header{
+                color: #d0e0c3;
+            }
+            .icon{
+                display: flex;
+                position: left;
+            }
+            .j{
+            display:flex;
+            flex-direction: column;
+        }   
+            #home{
+            margin-top: 1px;
+            background-color:#d0e0c3 ;
+/** background-image:url(WhatsApp_Image_2024-01-06_at_10.00.31_PM-removebg-preview-removebg-preview-removebg-preview.png) ;**/
+            object-fit: cover;
+            width: 520px;
+            height: 600px;
+        }
+            #picter{
+            margin-top:17%;
+            margin-right: 30%;
+            width:500px ;
+            }
+            #pi{
+                width: 490px;
+                height: 290px;
+            }
+            #PARA{
+                margin-top: 0%;
+                text-justify: newspaper;
+                font-style: oblique;
+                color: rgb(55, 112, 55);
+            }
+    #bac{
+            background-color: #bcd1aa;
+            height:300px ;
+            width: 100%;
+            }
+
+            .HHH{
+            display: none;
+        
+            }
+            .image{
+            position: relative;
+            top: -110px;
+        }
+        h1{
+            color: rgb(0, 0, 0);
+            font-family:'poppins',sans-serif ;
+            font-size: 40px;
+        }
+        .navigation a{
+            display: none;
+        }
+        .navigation .btnLogin-popup{
+            width: 130px;
+            height: 50px;
+            background: transparent;
+            border: 1px solid #d0e0c3;
+            outline: none;
+            border-radius: 30px;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            background: transparent;
+            font-weight: 500;
+            margin-left: 40px;
+        }
+        #center{
+            display: flex;
+            justify-content: center;
+            margin-right: 10%;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <!--salma-->
+    <div id="home"><header>
+        <h2 class="logo">LO</h2>
+        <nav class="navigation">
+            <a href="Article.html">ARTICLE</a>
+            <a href="SERVICE.html">SERVICES</a>
+            <button class="btnLogin-popup"><a href="plan.html">SUBSCRIBE</a></button>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class='bx bx-menu'></i>
+            </a>
+        </nav>
+    </header>
+            <div >
+                <div id="loooo" >
+                <h1 class="text-center mt-5 pt-4">LOMBOK<br>HOLISTIC HEALTH<br>______ </h1>
+                </div>
+                <img class="image" id="picter" src="WhatsApp_Image_2024-01-06_at_10.00.31_PM-removebg-preview-removebg-preview-removebg-preview.png"  >  
+            </div>
+    </div>
+
+<!--sanaa-->
+    <section class="container  mt-5 text-center ">
+        <div>
+            <h1 class="h1 ">LATEST ARTICLES</h1>
+            <h2>___</h2>
+        </div>
+        <div class="row mt-5 ms-4 me-5">
+                <div class="col-md-3 card  pb-4 ps-0 pe-0 mb-3 shadow-lg me-5 ">
+                    <img  class="card-img-top" src="article1.jpg" alt="article1">
+                    <h2 class="pt-4">___</h2>
+                    <p class="card-body h6 ">How to  use mindfullness <br>
+                        in your everyday life</p>
+                </div>
+                <div class="col-md-3 card  pb-4 ps-0 pe-0 mb-3 shadow-lg  me-5" >
+                    <img  class="card-img-top" src="article2.png" alt="article2">
+                    <h2 class="pt-4">___</h2>
+                    <p class="card-body h6 ">What are the best walking<br>
+                        meditations</p>
+                </div>
+                <div class="col-md-3 card pb-4 ps-0 pe-0 mb-3 shadow-lg me-5">
+                    <img  class="card-img-top" src="article3.jpg" alt="article3"class="card-img-top">
+                    <h2 class="pt-4">___</h2>
+                    <p class="card-body h6 ">How to go deep into<br>
+                        the mind of hope</p>
+                </div>
+            </div>
+        </section>
+        <!--wissal-->
+        <div>
+        <div class="j">
+            <!-- **** image**** -->
+        <div> 
+            <img  id="pi" src="image1.jpg" alt="plante">
+        </div>
+            <!-- **** contenu**** -->
+        <div class="text-dark text-center mt-5" id="PARA"> 
+                <h1 style="margin-top:7rem;letter-spacing:2px; color: rgb(55, 112, 55);">ABOUT</h1>
+                <h2 style="margin-top: -0.8em;">___</h2>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magnam volup<br>
+                    quia pariatur aspernatur quasi? Beatae, molestiae quibusdam adipisci odio volu <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magnam volu<br>
+                    quia pariatur aspernatur quasi? Beatae, molestiae quibusdam adipisci odio volu <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magnam volu<br>
+                    quia pariatur sit amet consectetur adipisicing
+                </p>
+            </div> 
+        </div></div>
+    <!--Oussama-->
+        <div class="centerate">
+            <div class=" text-center mt-3 " id="bac"> 
+                <h1  id="subb">SUBSCRIBE</h1> 
+                <p>Sifn-up to our newsletter </p> 
+                <div class="search-field" >
+                    <input type="text" placeholder="Search for anythings">
+                </div> 
+                <div class="hero-right-section-btns">
+                <button class="btn btn-outline-dark mt-2 col-md-1">submit</button>
+                </div> 
+            </div>
+        </div>
+        <footer>
+        <div class="d-flex justify-content-between align-items-center" >
+        <div class="HHH">
+            <div class="cercle"><i class='bx bxl-instagram'></i></div>
+            <div class="cercle"><i class='bx bxl-twitter'></i></i></div>
+            <div class="cercle"><i class='bx bxl-facebook'></i></div>
+            <div class="cercle"><i class='bx bxl-behance'></i></div>
+        </div>
+        <div>
+        <nav  class=" navbar navbar-expand-sm " id="center">
+        <ul class="navbar-nav mx-auto" ><!-- Links -->
+            <li class="nav-item hover-bg"><a class="nav-link color-dark " href="##">ABOUT</a></li>
+            <li class="nav-item hover-bg"><a class="nav-link color-dark" href="##">ARTICLES</a></li>
+            <li><BUtton type="button" class="btn btn-outline-dark  " id="BB">SUBSCRIBE</BUtton></li>
+        </ul></nav>
+        </div> 
+        </div>
+            <p class="text-center">&copy; 2024 Your Website Name</p>
+            <p class="text-center" >OUSSAMA OUISSAL SANAA SALMA </p>
+        </footer>
+
+        
+    </body>
+    </html>
